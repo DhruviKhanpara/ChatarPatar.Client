@@ -1,16 +1,3 @@
-/**
- * Auth types — DTOs, request types, view models.
- */
-
-// ── DTOs (match backend response shapes exactly) ───────────────────────
-
-export interface UserDto {
-  id: string;
-  name: string;
-  email: string;
-  avatarUrl: string;
-}
-
 export interface UserProfileDto {
   username?: string;
   email?: string;
@@ -21,19 +8,6 @@ export interface UserProfileDto {
   bio: string | null;
   avatarUrl: string | null;
   avatarThumbnailUrl: string | null;
-}
-
-export interface LoginResponseDto {
-  user: UserDto;
-}
-
-export interface RegisterResponseDto {
-  user: UserDto;
-  org?: {
-    id: string;
-    name: string;
-    slug: string;
-  };
 }
 
 // ── Request types ──────────────────────────────────────────────────────
