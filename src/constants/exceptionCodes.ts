@@ -1,0 +1,5 @@
+export enum ExceptionCodes {
+  TOKEN_EXPIRED = "TOKEN_EXPIRED",
+  TOKEN_INVALID = "TOKEN_INVALID",
+  AUTH_REQUIRED = "AUTH_REQUIRED",
+}
